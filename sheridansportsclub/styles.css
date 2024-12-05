@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #F49C8A;
+    transform: translateY(-2px);
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    grid-column: span 12;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Noto Serif";
+}
+
+h2 {
+    font-family: "Noto Serif";
+}
+
+h3 {
+    font-family: "Inter";
+}
+
+p {
+    font-size: 20px;
+    font-family: "Inter";
+    line-height: 175%;
+}
+
+a {
+    font-family: "Inter";
+}
+
+nav {
+    align-items: center;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.button {
+    background-color: #D95439;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.gradient_text {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#D95439, #F49C8A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+
+
+.nav_links {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0%;
+}
+
+.nav_links a {
+    text-decoration: none;
+}
+
+.page_content {
+    grid-column: span 12;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing_hero {
+    grid-column: span 12;
+    text-align: center;
+    gap: 48px;
+    padding: 64px;
+}
+
+.hero_video {
+    width: 100%; /* Ensure the video stretches to fill its container */
+    max-width: 100%; /* Prevent the video from exceeding its container width */
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.hero_text {
+    grid-column: span 12;
+    text-align: center;
+    gap: 32px;
+}
+
+.body_group {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    padding: 64px;
+}
+
+.body_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.body_image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.schedule {
+    grid-column: span 12;
+    margin-bottom: 32px;
+    padding: 32px;
+}
+
+.schedule_events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.card {
+    padding: 15px;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.top_text {
+    grid-column: span 12;
+    padding: 64px;
+}
+
+.sports {
+    grid-column: span 12;
+    padding: 12px;
+}
+
+.sport {
+    margin-bottom: 64px;
+}
+
+.sports img {
+    width: 64px;
+    height: auto;
+}
+
+.sports_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.about_content {
+    grid-column: span 12;
+    display: grid;
+    gap: 64px;
+    align-items: center;
+    padding: 64px;
+    text-align: center;
+}
+
+.about_image {
+    width: 100%;
+}
+
+.photo_gallery {
+    grid-column: span 12;
+}
+
+.photo_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 32px;
+}
+
+.grid_img {
+    width: 100%;
+}
+
+.achievements_container {
+    grid-column: span 12;
+    text-align: center;
+}
+
+.achievements_h2 {
+    padding-bottom: 32px;
+}
+
+.stats_container {
+    justify-content: center;
+    display: flex;
+    gap: 64px;
+}
+
+.stat h2{
+    color: #D95439;
+    font-size: 32px;
+}
+
+@media (max-width: 900px) {
+    .body_group, 
+    .about_content {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .body_text p {
+        max-width: 624px;
+    }
+
+    .schedule_events,
+    .sports_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .landing_hero {
+        padding: 12px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 16px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero_video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .landing_hero {
+        padding: 16px;
+    }
+
+    .top_text {
+        padding: 6px;
+    }
+
+    .schedule{
+        padding: 6px;
+    }
+
+    .stats_container{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1, .gradient_text{
+        font-size: 48px;
+    }
+
+    .photo_grid{
+        padding: 0px;
+    }
+
+    .hero_text{
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
